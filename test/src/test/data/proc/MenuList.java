@@ -6,7 +6,7 @@ import test.data.Menu;
 
 public class MenuList {
 	public void proc(ArrayList<Menu> menus) {
-		System.out.println("　　　　　　　　　　메 뉴 목 록");
+		System.out.println("　　　　　　　　　　메 뉴 목 록\n");
 		for (Menu m : menus) 
 			m.info();
 		}	

@@ -7,7 +7,7 @@ import test.data.Menu;
 public class MenuReg {
 	public void proc(ArrayList<Menu> menus) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("　　　　　　　　　　메 뉴 추 가");
+		System.out.println("　　　　　　　　　　메 뉴 추 가\n");
 		System.out.println("메뉴이름을 입력하세요");
 		String name = sc.next();
 		System.out.println("메뉴종류를 입력하세요");

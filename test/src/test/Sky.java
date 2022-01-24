@@ -15,20 +15,20 @@ public class Sky {
 	void proc() {
 		
 		ArrayList<Menu> menus = new ArrayList<Menu>();
-		menus.add(new Menu("아메리카노", "2500원","cafe"));
 		menus.add(new Menu("카페라떼", "3500원", "cafe"));
 		menus.add(new Menu("카푸치노", "3500원", "cafe"));
 		menus.add(new Menu("카페모카", "3500원", "cafe"));
+		menus.add(new Menu("아메리카노", "2500원","cafe"));
 		menus.add(new Menu("에스프레소", "2500원", "cafe"));
 		menus.add(new Menu("바닐라라떼", "4500원", "cafe"));
-		menus.add(new Menu("카라멜마끼아또", "4500원", "cafe"));
+		menus.add(new Menu("화이트모카", "4500원", "cafe"));
 
 		System.out.println(Title.TITLE);
 
 		Scanner sc = new Scanner(System.in);
 		boolean isNotEnd = true;
 		while (isNotEnd) {
-			System.out.print("명령을 입력: (1:메뉴목록 보기 / 2:메뉴추가 / 3:메뉴삭제 / 4:메뉴수정 / e:프로그램 종료)");
+			System.out.print("명령을 입력: (1:메뉴목록 보기 / 2:메뉴추가 / 3:메뉴삭제 / 4:메뉴수정 / e:프로그램 종료)\n");
 			String cmd = sc.next();
 			switch (cmd) {
 			case "1": 
