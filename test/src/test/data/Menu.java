@@ -2,12 +2,12 @@ package test.data;
 
 public class Menu {
 	private String name;
-	private String tel;
-	private String sex;
-	public Menu(String name, String tel, String sex) {
+	private String price;
+	private String kind;
+	public Menu(String name, String price, String kind) {
 		this.name = name;
-		this.tel = tel;
-		this.sex = sex;
+		this.price = price;
+		this.kind = kind;
 	}
 	public String getName() {
 		return name;
@@ -15,20 +15,20 @@ public class Menu {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getTel() {
-		return tel;
+	public String getPrice() {
+		return price;
 	}
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setPrice(String price) {
+		this.price = price;
 	}
-	public String getSex() {
-		return sex;
+	public String getKind() {
+		return kind;
 	}
-	public void setSex(String sex) {
-		this.sex = sex;
+	public void setKind(String kind) {
+		this.kind = kind;
 	}
 	public void info() {
-		System.out.println("메뉴:"+name+ " 종류:"+ sex+" 가격:"+tel);
+		System.out.println("메뉴:"+name+ " 종류:"+ kind+" 가격:"+price);
 	}
 	
 }

@@ -11,11 +11,11 @@ public class MenuReg {
 		System.out.println("메뉴이름을 입력하세요");
 		String name = sc.next();
 		System.out.println("메뉴종류를 입력하세요");
-		String tel = sc.next();
+		String price = sc.next();
 		System.out.println("메뉴가격을 입력하세요");
-		String sex = sc.next();
-		Menu tempMember = new Menu(name,sex,tel);
-		menus.add(tempMember);
+		String kind = sc.next();
+		Menu tempMenu = new Menu(name,kind,price);
+		menus.add(tempMenu);
 		System.out.println("메뉴가 추가되었습니다");
 	}
 }

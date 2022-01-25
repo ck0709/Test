@@ -26,14 +26,14 @@ public class MenuEdit {
 			System.out.print("메뉴이름을 새로 입력해주세요:");
 			String editName = sc.next();
 			System.out.print("메뉴종류를 새로 입력해주세요:");
-			String editSex = sc.next();
+			String editKind = sc.next();
 			System.out.print("메뉴가격을 새로 입력해주세요:");
-			String editTel = sc.next();
+			String editPrice = sc.next();
 			
 			Menu m = menus.get(searchIndex);
 			m.setName(editName);
-			m.setSex(editSex);
-			m.setTel(editTel);
+			m.setKind(editKind);
+			m.setPrice(editPrice);
 			System.out.println(searchName + " 메뉴 정보가 수정되었습니다.");
 		}				
 	}
