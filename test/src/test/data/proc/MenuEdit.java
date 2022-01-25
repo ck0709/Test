@@ -27,12 +27,24 @@ public class MenuEdit {
 			System.out.println(searchName + " 메뉴는 없습니다.");
 		} else {
 			
-			System.out.print("메뉴이름을 새로 입력해주세요:");
+			System.out.print("메뉴이름을 새로 입력해주세요: (x:취소) :");
 			String editName = sc.next();
-			System.out.print("메뉴종류를 새로 입력해주세요:");
+			if(editName.equals("x")) {
+				System.out.println("취소되었습니다.");
+				return;
+			}
+			System.out.print("메뉴종류를 새로 입력해주세요: (x:취소) :");
 			String editKind = sc.next();
-			System.out.print("메뉴가격을 새로 입력해주세요:");
+			if(editKind.equals("x")) {
+				System.out.println("취소되었습니다.");
+				return;
+			}
+			System.out.print("메뉴가격을 새로 입력해주세요: (x:취소) :");
 			String editPrice = sc.next();
+			if(editPrice.equals("x")) {
+				System.out.println("취소되었습니다.");
+				return;
+			}
 			
 			Menu m = menus.get(searchIndex);
 			m.setName(editName);
