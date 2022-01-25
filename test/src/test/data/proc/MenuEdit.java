@@ -8,9 +8,13 @@ import test.data.Menu;
 public class MenuEdit {
 	
 	public void proc(ArrayList<Menu>menus) {
-		System.out.print("수정할 메뉴 이름을 입력:");
+		System.out.print("수정할 메뉴 이름을 입력: (x:취소) :");
 		Scanner sc = new Scanner(System.in);
 		String searchName = sc.next();
+		if(searchName.equals("x")) {
+			System.out.println("취소되었습니다.");
+			return;
+		}
 		int searchIndex = -1;
 		
 		for(int i=0;i<menus.size();i++) {

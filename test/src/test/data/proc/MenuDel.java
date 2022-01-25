@@ -7,9 +7,13 @@ import test.data.Menu;
 
 public class MenuDel {
 	public void proc(ArrayList<Menu> menus) {
-		System.out.println("삭제할 메뉴 이름을 입력하세요");
+		System.out.println("삭제할 메뉴 이름을 입력하세요 (x:취소) :");
 		Scanner sc = new Scanner(System.in);
 		String delName = sc.next();
+		if(delName.equals("x")) {
+			System.out.println("취소되었습니다.");
+			return;
+		}
 		int delIndex = -1;
 		for(int i = 0; i<menus.size();i++) {
 			if(menus.get(i).getName().equals(delName)) {
